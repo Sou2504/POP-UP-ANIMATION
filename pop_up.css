@@ -1,0 +1,48 @@
+body, html{
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #37306B;
+    position: relative;
+}
+.container {
+    position: absolute;
+    width: 400px;
+    height: 220px;
+    background-color: #D27685;
+    top: -400px;
+    left: 37%;
+    border-radius: 10px;
+    animation: pop 0.7s ease-out forwards, turn 3s 1.5s linear forwards;
+    transform-origin: 10px 10px;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+span {
+    font-size: 36px;
+    color: black;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-style: italic;
+}
+@keyframes pop {
+    0%{}
+    70%{transform: translateY(750px);}
+    100%{transform: translateY(600px);}
+}
+@keyframes turn {
+    0%{transform: translateY(600px) rotateZ(0deg);}
+    40%{transform: translateY(600px) rotateZ(90deg);}
+    70%{transform: translateY(600px) rotateZ(65deg);}
+    100%{transform: translateY(600px) rotateZ(75deg);}
+    
+}
